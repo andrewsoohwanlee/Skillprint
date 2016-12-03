@@ -1,0 +1,7 @@
+// export const SET_BLOCK_ID = 'SET_BLOCK_ID'
+
+// export const SET_POPUP_VISIBLE = 'SET_POPUP_VISIBLE'
+
+// export const UPDATE_POPUP = 'UPDATE_POPUP'
+
+// export const UPDATE_POPUP_POSITION = 'UPDATE_POPUP_POSITION'

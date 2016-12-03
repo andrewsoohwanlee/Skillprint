@@ -1,0 +1,70 @@
+/* Fonts
+   ========================================================================== */
+
+$font-serif: "Crimson Text", Georgia, serif;
+$font-sans: "Work Sans", Helvetica, sans-serif;
+
+/* Colors
+   ========================================================================== */
+
+$color-white:   #fff;
+$color-light: #f8f8f8;
+$color-medium: rgba(255, 255, 255, 0.5);
+$color-dark: #191919;
+$color-dark-medium: rgba(25, 25, 25, 0.5);
+
+/* Border Radius
+   ========================================================================== */
+
+$border-regular: 0.3rem;
+
+/* Shadows
+   ========================================================================== */
+
+$shadow-small: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.1);
+
+/* Animation Speed & Easing
+   ========================================================================== */
+
+$speed-fast: 200ms;
+$speed-medium: 400ms;
+$speed-slow: 700ms;
+
+$easing-regular: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+/* Breakpoints
+   ========================================================================== */
+
+// $bp-small: 400px;
+// $bp-medium: 700px;
+// $bp-large: 1000px;
+// $bp-largest: 1200px;
+
+/* Mixins
+   ========================================================================== */
+
+@mixin media($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin link-underline-dark {
+  text-decoration: none;
+  background-image: linear-gradient(to top,
+    rgba(0,0,0,0) 11%,
+    rgba(0,0,0,.3) 11%,
+    rgba(0,0,0,.3) 16%,
+    rgba(0,0,0,0) 16%
+    );
+}
+
+@mixin link-underline-light {
+  text-decoration: none;
+  background-image: linear-gradient(to top,
+    rgba(255, 255, 255, 0) 11%,
+    rgba(255, 255, 255, .1) 11%,
+    rgba(255, 255, 255, .1) 16%,
+    rgba(255, 255, 255, 0) 16%
+    );
+}

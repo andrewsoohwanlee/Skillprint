@@ -1,0 +1,804 @@
+###################
+# Skillprint Data #
+###################
+
+###################
+#    Assemblies   #
+###################
+
+[[assemblies]]
+id = "webdesign"
+name = "Web Design"
+description = "Sample description here."
+
+  [[assemblies.blocks]]
+  id = "webdesign-0" # HTML
+  x = 2
+  y = 5
+
+  [[assemblies.blocks]]
+  id = "webdesign-1" # CSS
+  x = 2
+  y = 1
+
+  [[assemblies.blocks]]
+  id = "webdesign-2" # RWD
+  x = 1
+  y = 1
+
+  [[assemblies.blocks]]
+  id = "webdesign-3" # Javascript
+  x = 4
+  y = 2
+
+  [[assemblies.blocks]]
+  id = "webdesign-4" # Node.js
+  x = 5
+  y = 1
+
+  [[assemblies.blocks]]
+  id = "webdesign-5" # React.js
+  x = 7
+  y = 3
+
+  [[assemblies.blocks]]
+  id = "webdesign-6" # Webpack
+  x = 4
+  y = 6
+
+  [[assemblies.blocks]]
+  id = "webdesign-7" # Vue.js
+  x = 5
+  y = 4
+
+  [[assemblies.blocks]]
+  id = "webdesign-8" # Git
+  x = 2
+  y = 4
+
+  [[assemblies.blocks]]
+  id = "webdesign-9" # Tools
+  x = 3
+  y = 0
+
+[[assemblies]]
+id = "manufacturing"
+name = "Manufacturing"
+description = "Sample description here."
+
+  [[assemblies.blocks]]
+  id = "manufacturing-0" # CAD Modeling
+  x = 3
+  y = 3
+
+  [[assemblies.blocks]]
+  id = "manufacturing-1" # Woodworking
+  x = 3
+  y = 1
+
+  [[assemblies.blocks]]
+  id = "manufacturing-2" # Welding
+  x = 1
+  y = 2
+
+  [[assemblies.blocks]]
+  id = "manufacturing-3" # Milling
+  x = 1
+  y = 4
+
+  [[assemblies.blocks]]
+  id = "manufacturing-4" # Lathe Turning
+  x = 3
+  y = 2
+
+  [[assemblies.blocks]]
+  id = "manufacturing-5" # Casting
+  x = 5
+  y = 4
+
+  [[assemblies.blocks]]
+  id = "manufacturing-6" # Sheet Metal Bending
+  x = 5
+  y = 5
+
+[[assemblies]]
+id = "designmethods"
+name = "Design Methods"
+description = "Sample description here."
+
+  [[assemblies.blocks]]
+  id = "designmethods-0" # Human-centered Design
+  x = 2
+  y = 0
+
+  [[assemblies.blocks]]
+  id = "designmethods-1" # Interviewing
+  x = 2
+  y = 3
+
+  [[assemblies.blocks]]
+  id = "designmethods-2" # Prototyping
+  x = 0
+  y = 2
+
+  [[assemblies.blocks]]
+  id = "designmethods-3" # Brainstorming
+  x = 3
+  y = 1
+
+  [[assemblies.blocks]]
+  id = "designmethods-4" # Needfinding
+  x = 1
+  y = 3
+
+  [[assemblies.blocks]]
+  id = "designmethods-5" # Testing
+  x = 4
+  y = 3
+
+  [[assemblies.blocks]]
+  id = "designmethods-6" # Principles
+  x = 2
+  y = 2
+
+[[assemblies]]
+id = "humanities"
+name = "Humanities"
+description = "Sample description here."
+
+  [[assemblies.blocks]]
+  id = "humanities-0" # Western Canon
+  x = 1
+  y = 1
+
+  [[assemblies.blocks]]
+  id = "humanities-1" # Creative WRiting
+  x = 2
+  y = 0
+
+  [[assemblies.blocks]]
+  id = "humanities-2" # Historical Resarch
+  x = 0
+  y = 1
+
+  [[assemblies.blocks]]
+  id = "humanities-3" # Medieval Studies
+  x = 1
+  y = 0
+
+  [[assemblies.blocks]]
+  id = "humanities-4" # Theater Studies
+  x = 2
+  y = 3
+
+[[assemblies]]
+id = "teaching"
+name = "Teaching"
+description = "Sample description here."
+
+  [[assemblies.blocks]]
+  id = "teaching-0" # Classroom Experience
+  x = 1
+  y = 0
+
+  [[assemblies.blocks]]
+  id = "teaching-1" # Mentoring
+  x = 3
+  y = 1
+
+  [[assemblies.blocks]]
+  id = "teaching-2" # Lesson Plans
+  x = 4
+  y = 0
+
+###################
+#      Blocks     #
+###################
+
+[[blocks]]
+id = ""
+name = ""
+description = ""
+
+  [[blocks.points]]
+  text = ""
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = ""
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = ""
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = ""
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = ""
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = ""
+  x = 0
+  y = 0
+
+########################################################
+#    Web Design   ######################################
+########################################################
+
+[[blocks]]
+id = "webdesign-0"
+name = "HTML"
+description = "Proficient with HTML (hypertext markup language)."
+
+  [[blocks.points]]
+  text = "Understanding of markup and structure."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "Ability to use HTML5 semantic tags."
+  x = 0
+  y = 1
+
+  [[blocks.points]]
+  text = "Proficient with HAML and other templating markups."
+  x = 1
+  y = 0
+
+  [[blocks.points]]
+  text = "Prior usage of ARIA features."
+  x = 1
+  y = 1
+
+[[blocks]]
+id = "webdesign-1"
+name = "CSS"
+description = "Working with cascading style sheets to make the web both functional and beautiful."
+
+  [[blocks.points]]
+  text = "Strong grasp of CSS selectors, attributes, etc."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "Understanding of inheritance and scope."
+  x = 0
+  y = 1
+
+  [[blocks.points]]
+  text = "Up-to-date with recent developments in CSS (flex, matrix, filters, other tools highlighted in cssnext)."
+  x = 0
+  y = 2
+
+  [[blocks.points]]
+  text = "Loves SCSS, along with surrounding tools (Bourbon, Neat, Compass)."
+  x = 1
+  y = 2
+
+  [[blocks.points]]
+  text = "LESS experience."
+  x = 2
+  y = 2
+
+  [[blocks.points]]
+  text = "Worked with CSS modules, BEM, and other organizational methods."
+  x = 2
+  y = 3
+
+  [[blocks.points]]
+  text = "Knows how to create smooth CSS-based animations with transforms, whether it's with DOM elements or SVG's."
+  x = 2
+  y = 4
+
+[[blocks]]
+id = "webdesign-2"
+name = "Responsive Web Design"
+description = "Adapting the screen to every medium; wide or short, print or screen."
+
+  [[blocks.points]]
+  text = "Has used (and learned lots from) front-end frameworks (Bootstrap, Skeleton, Foundation)."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "Extensive knowledge of media queries for screens, print, and differing display densities."
+  x = 0
+  y = 1
+
+  [[blocks.points]]
+  text = "Experience with responsive image techniques (padding tricks, working with multiple resolutions)."
+  x = 0
+  y = 2
+
+  [[blocks.points]]
+  text = "Testing on multiple and varying devices."
+  x = 0
+  y = 3
+
+[[blocks]]
+id = "webdesign-3"
+name = "Javascript"
+description = "Adding dynamism to websites circa 1995! And learning the ever-growing set of quirks of the language."
+
+  [[blocks.points]]
+  text = "Experience with ES5 and upcoming JS technologies (through Babel and Typescript)."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "jQuery proficiency (but not reliance)."
+  x = 1
+  y = 0
+
+  [[blocks.points]]
+  text = "Can read and use documentation, stackoverflow, Google searches."
+  x = 1
+  y = 1
+
+  [[blocks.points]]
+  text = "Can use API's of other services with AJAX or request libraries."
+  x = 2
+  y = 1
+
+[[blocks]]
+id = "webdesign-4"
+name = "Node.js"
+description = "The now-dominant (in 2016) ecosystem for Javascript applications."
+
+  [[blocks.points]]
+  text = "❤️'s npm and (recently) yarn."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "Experience with MEAN stack (MongoDB, Express.js, Angular, and Node.js)."
+  x = 1
+  y = 0
+
+  [[blocks.points]]
+  text = "Has used testing tools (eslint, stylelint, mocha)."
+  x = 1
+  y = 1
+
+[[blocks]]
+id = "webdesign-5"
+name = "React.js"
+description = "The currently dominant front-end Javascript framework. I've used it frequently and understand its pros/cons."
+
+  [[blocks.points]]
+  text = "Experience with Redux, MobX, React Router, and more."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "Understanding of current limitations of React (animations, transitions, newness)."
+  x = 1
+  y = 0
+
+[[blocks]]
+id = "webdesign-6"
+name = "Webpack"
+description = "The primary Javascript bundler (and even task runner) for frameworks like React and Vue."
+
+  [[blocks.points]]
+  text = "Grasp of how to configure webpack and where it's going in 2.0."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "Can use various loaders and plugins (from HTMLWebpackPlugin to vueloader to Uglify)."
+  x = 1
+  y = 0
+
+  [[blocks.points]]
+  text = "Knows how to analyze bundle size and minify bundles."
+  x = 1
+  y = 0
+
+[[blocks]]
+id = "webdesign-7"
+name = "Vue.js"
+description = "An underdog compared to React; my favorite JS framework which was made to create this website. Do ask why!"
+
+  [[blocks.points]]
+  text = "Can use Vue.js, Vue Router, and Vuex 2.0."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "Familiar with .vue component files and setup."
+  x = 1
+  y = 0
+
+[[blocks]]
+id = "webdesign-8"
+name = "Git"
+description = "A version control system. I use it for code and large-file storage (for designs)."
+
+  [[blocks.points]]
+  text = "General grasp of Git workflow (with Github, Gitlab, or standalone)."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "Understanding of how and why to responsibly contribute to projects."
+  x = 1
+  y = 0
+
+[[blocks]]
+id = "webdesign-9"
+name = "Web Design Tools"
+description = "I've worked with a variety of tools related to designing websites. Prototyping on paper is preferred, of course."
+
+  [[blocks.points]]
+  text = "Strong experience with the Adobe suite: Photoshop, Illustrator, Dreamweaver (once, long ago), After Effects."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "Favors Sketch as primary design tool."
+  x = 0
+  y = 1
+
+  [[blocks.points]]
+  text = "Experience with Principle, Figma, and Origami Studio."
+  x = 0
+  y = 2
+
+########################################################
+#  Manufacturing  ######################################
+########################################################
+
+[[blocks]]
+id = "manufacturing-0"
+name = "CAD Modeling"
+description = "Modeling tools to take paper drawings to more solidified parts and assemblies."
+
+  [[blocks.points]]
+  text = "Experience using SolidWorks, using tools ranging from extrusions and cuts to sheet metal bending."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "Can create manufacturing design drawings from parts and assemblies."
+  x = 1
+  y = 0
+
+  [[blocks.points]]
+  text = "Understanding of tolerances, thicknesses, and material interactions."
+  x = 2
+  y = 0
+
+[[blocks]]
+id = "manufacturing-1"
+name = "Woodworking"
+description = "Tools, machines, and processes related to wood."
+
+  [[blocks.points]]
+  text = "Experience using table saw, panel saw, bandsaws, and sanders"
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "Knowledge of applying fasteners and inserts for connections and metal interaction"
+  x = 1
+  y = 0
+
+  [[blocks.points]]
+  text = "Experience with wood polishing, finishing"
+  x = 2
+  y = 0
+
+[[blocks]]
+id = "manufacturing-2"
+name = "Welding"
+description = "Using welding equipment to join sheet metal and other metals together."
+
+  [[blocks.points]]
+  text = "Experience with Oxy-Acetylene (Oxy-fuel welding) for welds and brazing."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "DC TIG welding for steel rods, sheets, and bars."
+  x = 1
+  y = 0
+
+[[blocks]]
+id = "manufacturing-3"
+name = "Milling"
+description = "Using milling machines to manufacture parts."
+
+  [[blocks.points]]
+  text = "Experience with a Bridgeport milling machine"
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "Can use a rotary table base to create angled or circular cuts"
+  x = 1
+  y = 0
+
+[[blocks]]
+id = "manufacturing-4"
+name = "Lathe Turning"
+description = "Using lathe machines to create axially symmetric manufactured parts."
+
+  [[blocks.points]]
+  text = "Experience with LeBlonde and Victor manual lathes."
+  x = 0
+  y = 0
+
+[[blocks]]
+id = "manufacturing-5"
+name = "Casting"
+description = "Casting metal parts in a foundry."
+
+  [[blocks.points]]
+  text = "Experience creating sand casting patterns from wood, and ramming up for metal pouring."
+  x = 0
+  y = 0
+
+[[blocks]]
+id = "manufacturing-6"
+name = "Sheet Metal Bending"
+description = "Working with sheet metals to create shapes."
+
+  [[blocks.points]]
+  text = "Can use CAD models to create vinyl cut templates."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "Knowledgeable of bend radii, k-factors, and how metal thicknesses and properties interact with bending."
+  x = 1
+  y = 0
+
+########################################################
+#    Design Methodology   ##############################
+########################################################
+
+
+[[blocks]]
+id = "designmethods-0"
+name = "Human-centered Design"
+description = "A methodology for design that starts with the premise that the greatest design comes from our connections with people.."
+
+  [[blocks.points]]
+  text = "Trained to work through design problems in a systematic way, from needfinding to testing to realization. This is a process that I personally develop with each project."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "Focus on empathy and understanding to find real needs."
+  x = 0
+  y = 1
+
+[[blocks]]
+id = "designmethods-1"
+name = "Interviewing"
+description = "Interviewing for design. Not just question-answer, but driving deeper into a problem."
+
+  [[blocks.points]]
+  text = "Experience structuring user interviews to be meaningful to both the interviewee and interviewer."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "Practice interviewing experts (i.e., high-level managers and activists in 2015, doing needfinding in the spaces of EdTech, finances, and cyber security for civil society organizations)."
+  x = 1
+  y = 0
+
+[[blocks]]
+id = "designmethods-2"
+name = "Prototyping"
+description = "Rapidly prototyping to think."
+
+  [[blocks.points]]
+  text = "Can create web-based prototypes of products or services, using services like Marvel, Invision, and more."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "Experience creating rapid prototypes (with materials ranging from foamcore, lasercuts, vinyl, and more) to convey ideas physically."
+  x = 0
+  y = 1
+
+[[blocks]]
+id = "designmethods-3"
+name = "Brainstorming"
+description = "Group or invidual brainstorming to challenge and create ideas."
+
+  [[blocks.points]]
+  text = "Prefers to defer judgement, promote quantity of ideas, and look at problems from different perspectives.<br><br><em>\"Flare first, then focus.\"</em>"
+  x = 0
+  y = 0
+
+[[blocks]]
+id = "designmethods-4"
+name = "Needfinding"
+description = "Looking at problem spaces and distilling them into tangible challenges to tackle"
+
+  [[blocks.points]]
+  text = "Experience: worked at the Policy Implementation Lab, Stanford, needfinding for civil society organizations over the course of six months"
+  x = 0
+  y = 0
+
+[[blocks]]
+id = "designmethods-5"
+name = "User Testing"
+description = "Users using prototypes to find out what works and what doesn't. Testing to think."
+
+  [[blocks.points]]
+  text = "Has experience with AB testing for online services and designs."
+  x = 0
+  y = 0
+
+[[blocks]]
+id = "designmethods-6"
+name = "Personal Principles"
+description = "An ever-growing list of principles of design I look at constantly. Internalized; most are quotes from others."
+
+  [[blocks.points]]
+  text = "<em>\"Good design is honest\"</em> — Dieter Rams"
+  x = 0
+  y = 0
+
+########################################################
+#    Humanities   ######################################
+########################################################
+
+[[blocks]]
+id = "humanities-0"
+name = "Studies in the Western Canon"
+description = "I've read and studied a vast collection of the Western Canon of literature and philosophy."
+
+  [[blocks.points]]
+  text = "Participated in a year-long section- and lecture-based program called Structured Liberal Education (SLE)."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "Sample favorite texts (of dozens): <em>The Odyssey</em> by Home, <em>Swallowing the Sun</em> by Rumi, <em>The Inferno</em> by Dante, <em>Don Quixote</em> by Cervantes, <em>On Liberty</em> by Mill, <em>Madame Bovary</em> by Flaubert, <em>To the Lighthouse</em> by Woolf."
+  x = 0
+  y = 1
+
+  [[blocks.points]]
+  text = "Ability to write about, discuss, and analyze texts."
+  x = 0
+  y = 2
+
+  [[blocks.points]]
+  text = "Engaged in a learning environment that was one and the same with my living environment. We ate and learned together!"
+  x = 0
+  y = 3
+
+[[blocks]]
+id = "humanities-1"
+name = "Creative Writing"
+description = "Written fiction stories and poetry works."
+
+  [[blocks.points]]
+  text = "Taken part in extensive writing and revision process, including workshopping with other students."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "Critiqued and recieved critique for creative works."
+  x = 0
+  y = 1
+
+[[blocks]]
+id = "humanities-2"
+name = "Historical Reserach"
+description = "I've engaged in research into historical documents to write papers and uncover facts. Eclectic subjects, but fun nonetheless."
+
+  [[blocks.points]]
+  text = "Took part in a class investigating the alleged murder of a University founder. Accessed and analyzed decades of historical documents (newspapers, clippings, photographs) circa 1900."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "Researched the American West: cowboys and water."
+  x = 0
+  y = 1
+
+  [[blocks.points]]
+  text = "Studied the filmography of Disney to explore its depiction of environmentalism throughout the years."
+  x = 0
+  y = 2
+
+[[blocks]]
+id = "humanities-3"
+name = "Medieval Studies"
+description = "I've done cursory studies in Medieval periods and people."
+
+  [[blocks.points]]
+  text = "Attended a 3-week trip to the UK to study the Magna Carta in 2015."
+  x = 0
+  y = 0
+
+[[blocks]]
+id = "humanities-4"
+name = "Theater Studies"
+description = "Studied theater (from acting to its written form) and its relationship with other fields."
+
+  [[blocks.points]]
+  text = "Engaged in a class connecting courtrooms to theater, and plays that depict this relationship."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "Acted in four plays: Reverend Hale in <em>The Crucible</em>, Silvio in <em>The Servant of Two Masters</em>, The Butler Lane in <em>The Importance of Being Earnest</em>, and Demetrius in <em>A Midsummer Night's Dream</em>."
+  x = 0
+  y = 1
+
+########################################################
+#     Teaching    ######################################
+########################################################
+
+[[blocks]]
+id = "teaching-0"
+name = "Classroom Experience"
+description = "Teaching students in an actual classroom setting."
+
+  [[blocks.points]]
+  text = "Taught multicultural students in Bo-Jeong, South Korea, tutoring weekly 1-hour sessions in English speaking from 2010-14."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "Worked as employee of Palo Alto Unified School District."
+  x = 1
+  y = 0
+
+  [[blocks.points]]
+  text = "Part-time substituted for a teacher in lessons on Math and History, following pre-made lesson plans."
+  x = 2
+  y = 0
+
+  [[blocks.points]]
+  text = "Tutored socratic-style seminars on topics ranging from geometry to philosophy"
+  x = 0
+  y = 1
+
+  [[blocks.points]]
+  text = "Taught creative writing to elementary (2nd-3rd grade) students as member of children's theater group"
+  x = 1
+  y = 1
+
+[[blocks]]
+id = "teaching-1"
+name = "Mentoring"
+description = "Serving as a role model or source of support for others."
+
+  [[blocks.points]]
+  text = "Served as mentors to underprivileged students in South Korea as part of a Big-sibling cooperation"
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "Worked as head of house for high schoolers (rotating count of 180+) at Stanford during the summers of 2015/16, organizing co-curricular activities over two month stretches"
+  x = 1
+  y = 0
+
+[[blocks]]
+id = "teaching-2"
+name = "Lesson Plan Development"
+description = "Developing and implementing lesson plans for educational experiences."
+
+  [[blocks.points]]
+  text = "Experience coordinating with other teaching staff to develop cohesive lesson plans."
+  x = 0
+  y = 0
+
+# Other

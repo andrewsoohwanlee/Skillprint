@@ -44,6 +44,11 @@ module.exports = {
         test: /\.toml$/,
         loader: 'toml-loader',
         exclude: paths.node
+      },
+      {
+        test: /\.yaml$/,
+        loader: 'yaml-loader',
+        include: paths.src
       }
     ]
   },

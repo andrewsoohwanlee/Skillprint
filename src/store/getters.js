@@ -1,1 +1,1 @@
-// export const popupName = state => state.skillprint.name
+export const popupName = state => state.skillprint.name

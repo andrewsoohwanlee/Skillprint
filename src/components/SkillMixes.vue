@@ -134,9 +134,11 @@ export default {
 }
 
 .skillmixes__assembly {
+  margin: 4rem 0;
   max-width: 30rem;
 
   @include media($bp-large) {
+    margin: 4rem 0;
     max-width: 26rem;
   }
 
@@ -177,6 +179,7 @@ export default {
    ========================================================================== */
 
 .skillmixes__assembly-list {
+  margin-top: 3.2rem;
   padding: 0 0 0 6rem;
   list-style: none;
 

@@ -2,6 +2,7 @@ import * as types from '../mutation-types'
 
 const state = {
   popup: {
+    prevBlockId: 'undefined',
     blockId: 'undefined',
     visible: false,
     pos: {
@@ -13,6 +14,7 @@ const state = {
 
 const mutations = {
   [types.UPDATE_POPUP_BLOCK_ID] (state, { blockId }) {
+    state.popup.prevBlockId = state.popup.blockId
     state.popup.blockId = blockId
   },
 

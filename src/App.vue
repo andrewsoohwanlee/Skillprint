@@ -6,6 +6,7 @@
   <SkillMap :skillprintData="skillprintData"></SkillMap>
   <SkillMixes :skillprintData="skillprintData"></SkillMixes>
   <SkillInProgress></SkillInProgress>
+  <AppFooter></AppFooter>
 </div>
 </template>
 
@@ -18,6 +19,7 @@ import SkillPopup from 'components/SkillPopup'
 import SkillMap from 'components/SkillMap'
 import SkillMixes from 'components/SkillMixes'
 import SkillInProgress from 'components/SkillInProgress'
+import AppFooter from 'components/AppFooter'
 
 import skillprintData from './data/SkillprintData.toml'
 
@@ -30,7 +32,8 @@ export default {
     SkillPopup,
     SkillMap,
     SkillMixes,
-    SkillInProgress
+    SkillInProgress,
+    AppFooter
   },
 
   data () {
@@ -91,8 +94,13 @@ body {
   box-sizing: border-box;
 }
 
-.app {
+/*.app {}*/
 
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
 }
 
 /* Show Sections
@@ -128,19 +136,28 @@ body {
   font-size: 2.4rem;
   font-weight: 700;
 
+  text-align: center;
+
   @include media($bp-large) {
     font-size: 3.6rem;
+    text-align: left;
   }
 }
 
 .showsection__description {
-  margin: 1.6rem 0;
+  margin: 1.6rem auto;
   max-width: 40rem;
 
   color: $color-dark-medium;
   font-family: $font-serif;
   font-size: 1.8rem;
   line-height: 2.5rem;
+  text-align: center;
+
+  @include media($bp-large) {
+    margin: 1.6rem 0;
+    text-align: left;
+  }
 }
 
 </style>

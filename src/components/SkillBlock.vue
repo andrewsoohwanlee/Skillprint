@@ -77,18 +77,16 @@ export default {
     },
 
     handleMouseLeave: function (event) {
-      // window.setTimeout(() => {
-      //   if (this.popupBlockId === this.block.id) {
-      //     this.setPopupVisible(false)
+      window.setTimeout(() => {
+        // Allow animated transition if hovering over adjacent/close-by blocks
+        if (this.popupBlockId === this.block.id) {
+          this.setPopupVisible(false)
+          this.updatePopupBlockId('undefined')
+        }
+      }, 200)
 
-      //     window.setTimeout(() => {
-      //       this.updatePopupBlockId('undefined')
-      //     }, 200)
-      //   }
-      // }, 100)
-
-      this.setPopupVisible(false)
-      this.updatePopupBlockId('undefined')
+      // this.setPopupVisible(false)
+      // this.updatePopupBlockId('undefined')
     }
   }
 }
@@ -104,7 +102,7 @@ export default {
 }
 
 .skillblock:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 </style>

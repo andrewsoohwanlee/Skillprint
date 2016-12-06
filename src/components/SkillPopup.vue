@@ -1,6 +1,6 @@
 <template>
 <div class="skillpopup__wrapper" :class="wrapperClasses">
-  <div class="skillpopup__outline" :style="outlineStyles">
+  <div class="skillpopup__outline" :class="outlineClasses" :style="outlineStyles">
     <SkillPopupPoint
       v-for="point in blockData.points"
       :pointData="point"
@@ -8,7 +8,7 @@
     ></SkillPopupPoint>
   </div>
 
-  <div class="skillpopup" :style="popupStyles" ref="skillpopup">
+  <div class="skillpopup" :class="popupClasses" :style="popupStyles" ref="skillpopup">
     <h1 class="skillpopup__title">{{ blockData.name }}</h1>
     <p class="skillpopup__description">{{ blockData.description }}</p>
     <div class="skillpopup__divider"></div>
@@ -39,12 +39,19 @@ export default {
 
   data () {
     return {
-      popupHeight: 0
+      popupHeight: 0,
+      popupPos: {
+        x: 0,
+        y: 0
+      },
+      popupVisible: false,
+      popupFadeOut: true
     }
   },
 
   computed: {
     ...mapState({
+      prevBlockId: state => state.skillprint.popup.prevBlockId,
       blockId: state => state.skillprint.popup.blockId,
       visible: state => state.skillprint.popup.visible,
       pos: state => state.skillprint.popup.pos
@@ -54,8 +61,15 @@ export default {
       // Return blockData of current block
       // Find blockId in blocksData
       for (let block of this.blocksData) {
-        if (block.id === this.blockId) {
-          return block
+        // When fading out, use the previous blockid to retain data
+        if (this.blockId === 'undefined') {
+          if (block.id === this.prevBlockId) {
+            return block
+          }
+        } else {
+          if (block.id === this.blockId) {
+            return block
+          }
         }
       }
 
@@ -65,8 +79,19 @@ export default {
     wrapperClasses: function () {
       let classes = []
 
-      if (this.visible) {
-        classes.push('skillpopup__wrapper--visible')
+      // Don't make popup visible until it's positioned correctly
+      // if (this.popupVisible) {
+      classes.push('skillpopup__wrapper--visible')
+      // }
+
+      return classes
+    },
+
+    outlineClasses: function () {
+      let classes = []
+
+      if (this.popupVisible && !this.popupFadeOut) {
+        classes.push('skillpopup--visible')
       }
 
       return classes
@@ -80,7 +105,56 @@ export default {
       }
     },
 
+    popupClasses: function () {
+      let classes = []
+
+      if (!this.popupVisible && this.popupFadeOut) {
+        classes.push('notransition')
+      }
+
+      if (this.popupVisible) {
+        classes.push('skillpopup--visible')
+      }
+
+      return classes
+    },
+
     popupStyles: function () {
+      return {
+        transform: `translate3d(${Math.round(this.popupPos.x)}px, ${Math.round(this.popupPos.y)}px, 0)`
+      }
+    },
+
+    popupListClasses: function () {
+      let classes = []
+
+      if (this.blockData && this.blockData.id) {
+        classes.push('point--' + this.blockData.id.slice(0, this.blockData.id.indexOf('-')))
+
+        let depth = 3
+
+        // Add skill depth (from 0-3)
+        if (this.blockData.points.length < 5) {
+          depth = 2
+        }
+
+        if (this.blockData.points.length < 4) {
+          depth = 1
+        }
+
+        if (this.blockData.points.length < 2) {
+          depth = 0
+        }
+
+        classes.push('point--' + depth)
+      }
+
+      return classes
+    }
+  },
+
+  methods: {
+    updatePopupPos: function () {
       let { x, y } = this.pos
 
       // Get block actual width & height
@@ -130,35 +204,37 @@ export default {
       }
 
       return {
-        transform: `translate3d(${Math.round(x + deltaX)}px, ${Math.round(y + deltaY)}px, 0)`
+        x: x + deltaX,
+        y: y + deltaY
       }
-    },
+    }
+  },
 
-    popupListClasses: function () {
-      let classes = []
+  beforeUpdate () {
+    // If the blockId is changed, move popup to expected position
+    if (this.blockId !== 'undefined') {
+      let newPos = this.updatePopupPos()
 
-      if (this.blockData) {
-        classes.push('point--' + this.blockData.id.slice(0, this.blockData.id.indexOf('-')))
-
-        let depth = 3
-
-        // Add skill depth (from 0-3)
-        if (this.blockData.points.length < 5) {
-          depth = 2
-        }
-
-        if (this.blockData.points.length < 4) {
-          depth = 1
-        }
-
-        if (this.blockData.points.length < 2) {
-          depth = 0
-        }
-
-        classes.push('point--' + depth)
+      if (newPos.x !== this.popupPos.x || newPos.y !== this.popupPos.y) {
+        this.popupPos = newPos
       }
 
-      return classes
+      this.$nextTick(() => {
+        this.popupVisible = true
+        this.popupFadeOut = false
+      })
+    // If the blockId was removed, move popup to (0, 0)
+    } else {
+      // this.popupPos = {
+      //   x: 0,
+      //   y: 0
+      // }
+
+      this.popupVisible = false
+
+      window.setTimeout(() => {
+        this.popupFadeOut = true
+      }, 200)
     }
   },
 
@@ -196,8 +272,15 @@ export default {
 .skillpopup__outline {
   position: relative;
   z-index: 5;
+  opacity: 0.01;
 
   filter: drop-shadow(0 0.1rem 0.3rem rgba(0,0,0,0.1));
+
+  transition: opacity $speed-fast $easing-regular;
+}
+
+.skillpopup__outline--visible {
+  opacity: 1;
 }
 
 .skillpopup__outline-point {
@@ -234,8 +317,14 @@ export default {
   background: rgba(255, 255, 255, 0.97);
   border-radius: 0.3rem;
   box-shadow: $shadow-small;
+  opacity: 0.01;
 
-  transition: transform $speed-fast $easing-regular;
+  transition: transform $speed-fast $easing-regular,
+              opacity $speed-fast $easing-regular;
+}
+
+.skillpopup--visible {
+  opacity: 1;
 }
 
 .skillpopup__title {

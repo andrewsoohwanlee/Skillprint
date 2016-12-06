@@ -9,6 +9,7 @@
       <h1>What is this?</h1>
       <p><em>Skillprint</em> is a living document that represents what I can do and aspire to learn. It captures different ways to look at the skills I have, and how they intermingle.</p>
       <p>Creating this, I wanted to give my skills a sense of life — to let each one breath, speak, and grow. No skill is alike, and therefore, none look alike.</p>
+      <p class="skillhero__signature">— Andrew Lee</p>
     </div>
   </div>
 </div>
@@ -106,6 +107,12 @@ export default {
     font-size: 2rem;
     line-height: 2.6rem;
   }
+}
+
+.skillhero__content .skillhero__signature {
+  color: $color-medium;
+  font-size: 1.6rem;
+  font-style: italic;
 }
 
 </style>

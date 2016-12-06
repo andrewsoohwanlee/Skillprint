@@ -1,16 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
-    <path id="a" d="M4,7 L0,7 L0,15 L8,15 L8,8 L12,8 L12,0 L4,0 L4,7 Z"/>
-    <mask id="c" width="12" height="15" x="0" y="0" fill="white">
+    <rect id="a" width="8" height="8" y="7"/>
+    <mask id="d" width="8" height="8" x="0" y="0" fill="white">
       <use xlink:href="#a"/>
     </mask>
-    <rect id="b" width="4" height="8" x="12" y="11"/>
-    <mask id="d" width="4" height="8" x="0" y="0" fill="white">
+    <path id="b" d="M14,11 L12,11 L12,19 L16,19 L16,15 L20,15 L20,11 L14,11 Z"/>
+    <mask id="e" width="8" height="8" x="0" y="0" fill="white">
       <use xlink:href="#b"/>
     </mask>
+    <path id="c" d="M14,4 L14,0 L10,0 L10,6 L10,8 L18,8 L18,4 L14,4 Z"/>
+    <mask id="f" width="8" height="8" x="0" y="0" fill="white">
+      <use xlink:href="#c"/>
+    </mask>
   </defs>
-  <g fill="none" fill-rule="evenodd" stroke="#191919" stroke-width="2" stroke-dasharray="1" opacity=".3">
-    <use mask="url(#c)" xlink:href="#a"/>
-    <use mask="url(#d)" xlink:href="#b"/>
+  <g fill="none" fill-rule="evenodd" stroke="#191919" stroke-width="2" stroke-dasharray="2 1" opacity=".3">
+    <use mask="url(#d)" xlink:href="#a"/>
+    <use mask="url(#e)" xlink:href="#b"/>
+    <use mask="url(#f)" xlink:href="#c"/>
   </g>
 </svg>

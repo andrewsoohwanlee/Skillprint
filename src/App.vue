@@ -4,12 +4,14 @@
   <SkillHeader></SkillHeader>
   <SkillPopup :blocksData="skillprintData.blocks"></SkillPopup>
   <SkillMap :skillprintData="skillprintData"></SkillMap>
-  <SkillMixes></SkillMixes>
+  <SkillMixes :skillprintData="skillprintData"></SkillMixes>
   <SkillInProgress></SkillInProgress>
 </div>
 </template>
 
 <script>
+import { mapActions } from 'vuex'
+
 import SkillHero from 'components/SkillHero'
 import SkillHeader from 'components/SkillHeader'
 import SkillPopup from 'components/SkillPopup'
@@ -35,6 +37,27 @@ export default {
     return {
       skillprintData
     }
+  },
+
+  methods: {
+    ...mapActions([
+      'updateScrollPos'
+    ]),
+
+    scrollHandler: function (event) {
+      this.updateScrollPos({
+        x: window.pageXOffset || document.documentElement.scrollLeft,
+        y: window.pageYOffset || document.documentElement.scrollTop
+      })
+    }
+  },
+
+  mounted () {
+    window.addEventListener('scroll', this.scrollHandler, { passive: true })
+  },
+
+  beforeDestroy () {
+    window.removeEventListener('scroll', this.scrollHandler)
   }
 }
 
@@ -61,7 +84,7 @@ body {
   transition: background $speed-fast $easing-regular;
 
   -webkit-tap-highlight-color: transparent;
-  scroll-behavior: smooth;
+  /*scroll-behavior: smooth;*/
 }
 
 * {

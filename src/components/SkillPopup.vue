@@ -179,7 +179,6 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 10;
   opacity: 0.01;
 
   pointer-events: none;
@@ -196,6 +195,7 @@ export default {
 
 .skillpopup__outline {
   position: relative;
+  z-index: 5;
 
   filter: drop-shadow(0 0.1rem 0.3rem rgba(0,0,0,0.1));
 }
@@ -224,6 +224,8 @@ export default {
    ========================================================================== */
 
 .skillpopup {
+  position: relative;
+  z-index: 10;
   padding-top: 1.6rem;
   width: 30rem;
 
@@ -233,7 +235,7 @@ export default {
   border-radius: 0.3rem;
   box-shadow: $shadow-small;
 
-  /*transition: transform $speed-fast $easing-regular;*/
+  transition: transform $speed-fast $easing-regular;
 }
 
 .skillpopup__title {

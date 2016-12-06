@@ -16,12 +16,12 @@
     "babel-polyfill": "^6.16.0",
     "eventsource-polyfill": "^0.9.6",
     "normalize.css": "^4.2.0",
-    "scrollmagic": "^2.0.5",
     "toml-loader": "^1.0.0",
     "vue": "^2.0.1",
     "vue-head": "^2.0.6",
     "vuex": "^2.0.0",
-    "yaml-loader": "^0.4.0"
+    "yaml-loader": "^0.4.0",
+    "zenscroll": "^3.3.0"
   },
   "devDependencies": {
     "babel-core": "^6.17.0",

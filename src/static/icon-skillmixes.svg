@@ -1,19 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="31" height="16" viewBox="0 0 31 16">
-  <g fill="#191919" fill-rule="evenodd" opacity=".3">
-    <rect width="4" height="4" x="15" y="8" opacity=".6"/>
-    <rect width="4" height="4" x="19" y="8" opacity=".6"/>
-    <rect width="4" height="4" x="23" y="4"/>
-    <rect width="4" height="4" x="23" y="8"/>
-    <rect width="4" height="4" x="23" y="12"/>
-    <rect width="4" height="4" x="27" y="8"/>
-    <rect width="4" height="4" x="27" y="12"/>
-    <rect width="4" height="4" x="4"/>
-    <rect width="4" height="4" x="8"/>
-    <rect width="4" height="4" x="19" y="4" opacity=".56"/>
-    <rect width="4" height="4" y="8" opacity=".6"/>
-    <rect width="4" height="4" x="4" y="8" opacity=".6"/>
-    <rect width="4" height="4" x="4" y="4"/>
-    <rect width="4" height="4" x="19"/>
-    <rect width="4" height="4" x="15" y="4" opacity=".56"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16">
+  <g fill="#828282" fill-rule="evenodd" opacity=".3">
+    <path d="M8,8 L12,8 L12,12 L8,12 L8,8 Z M12,8 L16,8 L16,12 L12,12 L12,8 Z M16,8 L20,8 L20,12 L16,12 L16,8 Z M16,12 L20,12 L20,16 L16,16 L16,12 Z M20,8 L24,8 L24,12 L20,12 L20,8 Z M20,12 L24,12 L24,16 L20,16 L20,12 Z" opacity=".6"/>
+    <path d="M16 4L20 4 20 8 16 8 16 4zM12 4L16 4 16 8 12 8 12 4zM12-.8817842e-16L16-.8817842e-16 16 4 12 4 12-.8817842e-16zM8 4L12 4 12 8 8 8 8 4zM4 0L8 0 8 4 4 4 4 0zM8 0L12 0 12 4 8 4 8 0zM0 8L4 8 4 12 0 12 0 8zM4 8L8 8 8 12 4 12 4 8zM4 4L8 4 8 8 4 8 4 4z"/>
   </g>
 </svg>

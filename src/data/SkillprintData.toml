@@ -191,6 +191,66 @@ description = "Sample description here."
   x = 4
   y = 0
 
+[[assemblies]]
+id = "skillmix1"
+name = "EdTech Prototyping"
+description = "Sample description here."
+
+  [[assemblies.blocks]]
+  id = "designmethods-4" # Needfinding
+  x = 0
+  y = 0
+
+  [[assemblies.blocks]]
+  id = "webdesign-5" # React
+  x = 0
+  y = 1
+
+  [[assemblies.blocks]]
+  id = "teaching-0" # Classroom Experience
+  x = 2
+  y = 1
+
+[[assemblies]]
+id = "skillmix2"
+name = "Background in Critique"
+description = "Sample description here."
+
+  [[assemblies.blocks]]
+  id = "webdesign-9" # Design Tools
+  x = 0
+  y = 0
+
+  [[assemblies.blocks]]
+  id = "manufacturing-0" # CAD Tools
+  x = 1
+  y = 1
+
+  [[assemblies.blocks]]
+  id = "humanities-1" # Creative Writing
+  x = 1
+  y = 2
+
+[[assemblies]]
+id = "skillmix3"
+name = "Interview Prep"
+description = "Sample description here."
+
+  [[assemblies.blocks]]
+  id = "designmethods-1" # Interviewing
+  x = 1
+  y = 2
+
+  [[assemblies.blocks]]
+  id = "humanities-2" # Historical Research
+  x = 3
+  y = 1
+
+  [[assemblies.blocks]]
+  id = "teaching-2" # Lesson Plans
+  x = 2
+  y = 3
+
 ###################
 #      Blocks     #
 ###################

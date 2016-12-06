@@ -1,4 +1,5 @@
 import 'babel-polyfill'
+import 'zenscroll'
 
 import Vue from 'vue'
 import store from './store'

@@ -1,5 +1,5 @@
 <template>
-<div class="skillmap">
+<div class="skillmap" id="skillmap">
   <ul class="skillmap__filter">
     <li>
       <input type="radio" name="skillmap__filter" id="skillmap__filter-bygroup" autocomplete="off" checked>
@@ -58,6 +58,7 @@ export default {
 
 .skillmap {
   display: flex;
+  padding-top: 6rem;
   overflow: hidden;
 
   flex-direction: column;
@@ -74,6 +75,7 @@ export default {
   margin: 3.6rem 0;
   padding: 0;
   height: 3.4rem;
+  overflow: hidden;
 
   align-items: center;
 

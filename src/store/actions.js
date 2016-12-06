@@ -20,3 +20,10 @@ export const updatePopupPos = ({ commit }, pos) => {
     { pos }
   )
 }
+
+export const updateScrollPos = ({ commit }, pos) => {
+  commit(
+    types.UPDATE_SCROLL_POS,
+    { pos }
+  )
+}

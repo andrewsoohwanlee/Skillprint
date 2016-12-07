@@ -5,7 +5,7 @@
   <SkillPopup :blocksData="skillprintData.blocks"></SkillPopup>
   <SkillMap :skillprintData="skillprintData"></SkillMap>
   <SkillMixes :skillprintData="skillprintData"></SkillMixes>
-  <SkillInProgress></SkillInProgress>
+  <SkillInProgress :skillprintData="skillprintData"></SkillInProgress>
   <AppFooter></AppFooter>
 </div>
 </template>
@@ -94,7 +94,10 @@ body {
   box-sizing: border-box;
 }
 
-/*.app {}*/
+.app {
+/*  position: relative;
+  overflow: hidden;*/
+}
 
 .notransition {
   -webkit-transition: none !important;

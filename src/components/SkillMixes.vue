@@ -11,15 +11,15 @@
         </div>
         <ul class="skillmixes__assembly-list">
           <li>
-            <div class="skillpoint skillpopup__point point--0 point--designmethods"></div>
+            <div class="skillpoint skillpopup__point skillpoint--0 skillpoint--designmethods"></div>
             Needfinding
           </li>
           <li>
-            <div class="skillpoint skillpopup__point point--3 point--teaching"></div>
+            <div class="skillpoint skillpopup__point skillpoint--3 skillpoint--teaching"></div>
             Classroom Experience
           </li>
           <li>
-            <div class="skillpoint skillpopup__point point--1 point--webdesign"></div>
+            <div class="skillpoint skillpopup__point skillpoint--1 skillpoint--webdesign"></div>
             React.js
           </li>
         </ul>
@@ -33,15 +33,15 @@
         </div>
         <ul class="skillmixes__assembly-list">
           <li>
-            <div class="skillpoint skillpopup__point point--1 point--webdesign"></div>
+            <div class="skillpoint skillpopup__point skillpoint--1 skillpoint--webdesign"></div>
             Web Design Tools
           </li>
           <li>
-            <div class="skillpoint skillpopup__point point--1 point--manufacturing"></div>
+            <div class="skillpoint skillpopup__point skillpoint--1 skillpoint--manufacturing"></div>
             CAD Modeling
           </li>
           <li>
-            <div class="skillpoint skillpopup__point point--1 point--humanities"></div>
+            <div class="skillpoint skillpopup__point skillpoint--1 skillpoint--humanities"></div>
             Creative Writing
           </li>
         </ul>
@@ -55,15 +55,15 @@
         </div>
         <ul class="skillmixes__assembly-list">
           <li>
-            <div class="skillpoint skillpopup__point point--1 point--designmethods"></div>
+            <div class="skillpoint skillpopup__point skillpoint--1 skillpoint--designmethods"></div>
             Interviewing
           </li>
           <li>
-            <div class="skillpoint skillpopup__point point--1 point--humanities"></div>
+            <div class="skillpoint skillpopup__point skillpoint--1 skillpoint--humanities"></div>
             Historical Research
           </li>
           <li>
-            <div class="skillpoint skillpopup__point point--0 point--teaching"></div>
+            <div class="skillpoint skillpopup__point skillpoint--0 skillpoint--teaching"></div>
             Lesson Plan Development
           </li>
         </ul>
@@ -137,14 +137,22 @@ export default {
   margin: 4rem 0;
   max-width: 30rem;
 
+  border-bottom: solid 0.1rem $color-light;
+
   @include media($bp-large) {
     margin: 4rem 0;
     max-width: 26rem;
+
+    border-bottom: 0;
   }
 
   @include media($bp-largest) {
     max-width: 30rem;
   }
+}
+
+.skillmixes__assembly:last-child {
+  border: 0;
 }
 
 .skillmixes__assembly-wrapper .skillassembly {

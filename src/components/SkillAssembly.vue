@@ -1,7 +1,7 @@
 <template>
 <div class="skillassembly" :class="assemblyClasses">
   <h2 class="skillassembly__title">{{ assemblyData.name }}</h2>
-  <SkillBlock v-for="block in assemblyBlocks" :assemblyData="assemblyData" :block="block"></SkillBlock>
+  <SkillBlock v-for="block in assemblyBlocks" :block="block"></SkillBlock>
 </div>
 </template>
 

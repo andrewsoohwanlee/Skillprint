@@ -61,6 +61,16 @@ description = "Sample description here."
   x = 3
   y = 0
 
+  [[assemblies.blocks]]
+  id = "webdesign-10" # Inprogress: Databased
+  x = 4
+  y = 0
+
+  [[assemblies.blocks]]
+  id = "webdesign-11" # Inprogress: Open-source Contributions
+  x = 6
+  y = 0
+
 [[assemblies]]
 id = "manufacturing"
 name = "Manufacturing"
@@ -98,8 +108,23 @@ description = "Sample description here."
 
   [[assemblies.blocks]]
   id = "manufacturing-6" # Sheet Metal Bending
+  x = 0
+  y = 1
+
+  [[assemblies.blocks]]
+  id = "manufacturing-7" # Inprogress: CNC Milling
+  x = 0
+  y = 3
+
+  [[assemblies.blocks]]
+  id = "manufacturing-8" # Inprogress: Injection Molding
+  x = 6
+  y = 4
+
+  [[assemblies.blocks]]
+  id = "manufacturing-9" # Inprogress: Wood Turning
   x = 5
-  y = 5
+  y = 0
 
 [[assemblies]]
 id = "designmethods"
@@ -141,6 +166,11 @@ description = "Sample description here."
   x = 2
   y = 2
 
+  [[assemblies.blocks]]
+  id = "designmethods-7" # Inprogress: Marketing & Business
+  x = 1
+  y = 1
+
 [[assemblies]]
 id = "humanities"
 name = "Humanities"
@@ -170,6 +200,11 @@ description = "Sample description here."
   id = "humanities-4" # Theater Studies
   x = 2
   y = 3
+
+  [[assemblies.blocks]]
+  id = "humanities-5" # Drawing & Art
+  x = 2
+  y = 5
 
 [[assemblies]]
 id = "teaching"
@@ -514,6 +549,43 @@ description = "I've worked with a variety of tools related to designing websites
   x = 0
   y = 2
 
+[[blocks]]
+id = "webdesign-10"
+name = "Databases"
+description = "I have basic database experience with MongoDB/Mongoose with Node, and some MySQL work, but still don't have much experience using them in production environments."
+inprogress = true
+
+  [[blocks.points]]
+  text = "I want to learn how to use RethinkDB/Horizon."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "I want to work on a project involving Firebase or other hosted backends."
+  x = 0
+  y = 1
+
+[[blocks]]
+id = "webdesign-11"
+name = "Open-source Contributions"
+description = "I've built projects on the web since 2010, but have never contributed to open source projects I believe in. I want to give back."
+inprogress = true
+
+  [[blocks.points]]
+  text = "I want to understand more about licensing and restrictions on software. I know the basics, but I don't know things like what makes software useable by a corporation."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "I want to contribute to large and small projects, ranging from things like Vue.js to publishing my own (useful) packages on npm."
+  x = 1
+  y = 0
+
+  [[blocks.points]]
+  text = "I want to engage with the larger developer community more, whether it's in Github issues or on forums like Designer/Hacker News."
+  x = 1
+  y = 1
+
 ########################################################
 #  Manufacturing  ######################################
 ########################################################
@@ -613,14 +685,57 @@ id = "manufacturing-6"
 name = "Sheet Metal Bending"
 description = "Working with sheet metals to create shapes."
 
-  [[blocks.points]]
-  text = "Can use CAD models to create vinyl cut templates."
-  x = 0
-  y = 0
+  # [[blocks.points]]
+  # text = "Can use CAD models to create vinyl cut templates."
+  # x = 0
+  # y = 0
 
   [[blocks.points]]
   text = "Knowledgeable of bend radii, k-factors, and how metal thicknesses and properties interact with bending."
   x = 1
+  y = 0
+
+[[blocks]]
+id = "manufacturing-7"
+name = "CNC Routing"
+description = "Learning how to work with a CNC machine, and plan on taking a course on it in the coming year."
+inprogress = true
+
+  [[blocks.points]]
+  text = "I want to learn how to properly setup and use a CNC Mill, from proper CAD model setups to cleanup."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "I want to know what the limitations of CNC milling are, particularly with the types of details and geometries you can create."
+  x = 0
+  y = 1
+
+[[blocks]]
+id = "manufacturing-8"
+name = "Plastic Injection Molding"
+description = "Learning how to setup patterns for plastic injection molds and using a machine to create parts."
+inprogress = true
+
+  [[blocks.points]]
+  text = "I want to learn more about plastics and where/when to use them in place of other materials."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "I want to understand the processes behind injection molding, and the limitations of the technique in terms of quality, durability, detail, etc."
+  x = 1
+  y = 0
+
+[[blocks]]
+id = "manufacturing-9"
+name = "Wood Turning"
+description = "An extension to woodworking, I want to practice turning wood on a wood lathe."
+inprogress = true
+
+  [[blocks.points]]
+  text = "I want to learn more about how to use a wood lathe."
+  x = 0
   y = 0
 
 ########################################################
@@ -713,6 +828,22 @@ description = "An ever-growing list of principles of design I look at constantly
   x = 0
   y = 0
 
+[[blocks]]
+id = "designmethods-7"
+name = "Marketing & Business"
+description = "I'd like to learn more about informing design decisions by thinking about the market."
+inprogress = true
+
+  [[blocks.points]]
+  text = "I've learned basic things about how to incorporate a business model into the design process, but never actually used that knowledge in the real world. I want experience putting market constraints onto the design process."
+  x = 0
+  y = 0
+
+  [[blocks.points]]
+  text = "I want to learn more about how to make design affordable and accessible, and how to take those considerations into the process."
+  x = 0
+  y = 1
+
 ########################################################
 #    Humanities   ######################################
 ########################################################
@@ -802,6 +933,26 @@ description = "Studied theater (from acting to its written form) and its relatio
   x = 0
   y = 1
 
+[[blocks]]
+id = "humanities-3"
+name = "Medieval Studies"
+description = "I've done cursory studies in Medieval periods and people."
+
+  [[blocks.points]]
+  text = "Attended a 3-week trip to the UK to study the Magna Carta in 2015."
+  x = 0
+  y = 0
+
+[[blocks]]
+id = "humanities-5"
+name = "Drawing & Art"
+description = "Some of my favorite work have been art pieces over the past few years."
+
+  [[blocks.points]]
+  text = "Practiced graphite drawing from a local SF artist, Josephine Taylor, focusing on intense realism (via a quarter-long class in 2016)."
+  x = 0
+  y = 0
+
 ########################################################
 #     Teaching    ######################################
 ########################################################
@@ -827,7 +978,7 @@ description = "Teaching students in an actual classroom setting."
   y = 0
 
   [[blocks.points]]
-  text = "Tutored socratic-style seminars on topics ranging from geometry to philosophy"
+  text = "Tutored socratic-style seminars on topics ranging from geometry to philosophy."
   x = 0
   y = 1
 

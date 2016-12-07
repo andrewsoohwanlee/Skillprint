@@ -1,7 +1,7 @@
 <template>
 <footer class="footer">
   <div class="footer__inner">
-    <p>Made by <a href="https://andrewlee.design/">Andrew Lee</a>.</p>
+    <p>Made by <a href="https://andrewlee.design/">Andrew Lee</a> — Updated 12/6/2016.</p>
   </div>
 </footer>
 </template>

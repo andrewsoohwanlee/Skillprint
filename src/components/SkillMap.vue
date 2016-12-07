@@ -1,6 +1,6 @@
 <template>
 <div class="skillmap" id="skillmap">
-  <ul class="skillmap__filter">
+<!--   <ul class="skillmap__filter">
     <li>
       <input type="radio" name="skillmap__filter" id="skillmap__filter-bygroup" autocomplete="off" checked>
       <label for="skillmap__filter-bygroup" class="skillmap__filter-btn active">Clustered</label>
@@ -9,7 +9,7 @@
       <input type="radio" name="skillmap__filter" id="skillmap__filter-bydepth" autocomplete="off">
       <label for="skillmap__filter-bydepth" class="skillmap__filter-btn">By Depth</label>
     </li>
-  </ul>
+  </ul> -->
 
   <div class="skillmap__grid">
     <SkillAssembly v-for="assembly in mapAssemblies" :assemblyData="assembly" :blocksData="skillprintData.blocks"></SkillAssembly>
@@ -58,7 +58,7 @@ export default {
 
 .skillmap {
   display: flex;
-  padding-top: 6rem;
+  padding-top: 10rem;
   overflow: hidden;
 
   flex-direction: column;

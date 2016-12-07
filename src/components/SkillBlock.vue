@@ -10,7 +10,6 @@
     v-for="point in block.blockData.points"
     :pointData="point"
     :blockData="block.blockData"
-    :assemblyData="assemblyData"
   ></SkillPoint>
 </div>
 </template>
@@ -23,7 +22,6 @@ export default {
   name: 'SkillBlock',
 
   props: {
-    assemblyData: { type: Object, required: true },
     block: { type: Object, required: true }
   },
 
@@ -83,10 +81,7 @@ export default {
           this.setPopupVisible(false)
           this.updatePopupBlockId('undefined')
         }
-      }, 200)
-
-      // this.setPopupVisible(false)
-      // this.updatePopupBlockId('undefined')
+      }, 100)
     }
   }
 }

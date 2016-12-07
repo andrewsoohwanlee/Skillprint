@@ -46,8 +46,6 @@ export default {
         }
       }
 
-      console.log(output)
-
       return output
     }
   }
